@@ -1,4 +1,3 @@
-/* GENERAL - MOBILE FIRST */
 
 body {
   margin: 0;
@@ -6,7 +5,7 @@ body {
   background: linear-gradient(135deg, #ffe1ec 0%, #fbeffb 100%);
   font-size: 16px;
   color: #4b3b2a;
-  font-weight: 300; /* texto más liviano */
+  font-weight: 300;
 }
 
 
@@ -19,7 +18,6 @@ body::before {
   filter: blur(22px) brightness(1.08);
 }
 
-/* HEADER + NAV */
 
 header {
   position: sticky;
@@ -45,7 +43,6 @@ nav a {
   font-weight: bold;
 }
 
-/* CONTENEDOR PRINCIPAL */
 
 main {
   max-width: 1200px;
@@ -56,13 +53,13 @@ main {
   box-shadow: 0 0 18px rgba(180, 142, 146, 0.10);
 }
 
-/* TÍTULOS Y TEXTOS */
 
 h1 {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 1rem;
   color: #b48e92;
+  font-family: 'Dancing Script', cursive;
 }
 
 .intro {
@@ -84,13 +81,12 @@ section {
   margin-top: 3rem;
 }
 
-/* CARDS DE CAFÉS */
 
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
-  align-items: start; /* <- Importante para alinear bien las tarjetas */
+  align-items: start;
 }
 
 .card {
@@ -128,7 +124,6 @@ section {
   font-size: 0.9rem;
 }
 
-/* TABLAS */
 
 table {
   width: 100%;
@@ -147,7 +142,6 @@ thead {
   background-color: #ffe1ec;
 }
 
-/* BOTÓN */
 
 button {
   padding: 0.7rem 1.2rem;
@@ -164,7 +158,6 @@ button:hover {
   background-color: #c28791;
 }
 
-/* GALERÍA PRINCIPAL */
 
 .galeria h2 {
   text-align: center;
@@ -192,7 +185,6 @@ button:hover {
   transform: scale(1.05);
 }
 
-/* FOOTER */
 
 footer {
   display: flex;
@@ -204,10 +196,6 @@ footer {
   font-size: 0.9rem;
   color: #6d4c41;
 }
-
-/* ------------------------ */
-/* PÁGINAS INDIVIDUALES DE CAFÉS */
-/* ------------------------ */
 
 .container {
   max-width: 800px;
@@ -242,11 +230,11 @@ footer {
 }
 
 .text {
-  font-size: 0.9rem; /* ↓ Tamaño más chico */
+  font-size: 0.9rem;
   color: #6d4c41;
   text-align: justify;
   max-width: 600px;
-  line-height: 1.6; /* Opcional: le da más aire */
+  line-height: 1.6;
 }
 
 .image-gallery {
@@ -280,11 +268,9 @@ footer {
   text-decoration: underline;
 }
 
-/* ------------------------ */
-/* RESPONSIVE MEDIA QUERIES */
-/* ------------------------ */
 
 @media screen and (min-width: 600px) {
+
   h1 {
     font-size: 2.4rem;
   }
@@ -348,7 +334,7 @@ footer {
   }
 }
 .text, p, li {
-  font-size: 0.9rem; /* Tamaño más chico en general */
+  font-size: 0.9rem;
   font-weight: 300;
   color: #5d4037;
   line-height: 1.7;
@@ -356,12 +342,12 @@ footer {
 .link-direccion {
   color: #b48e92;
   text-decoration: none;
-  font-family: 'Poppins', sans-serif; /* o la fuente que quieras */
-  font-weight: 600; /* o lo que prefieras */
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
 }
 .intro-blog {
-  background-color: #fff0f5; /* suave y claro, armonioso con el fondo */
-  border-left: 5px solid #b48e92; /* acento elegante a la izquierda */
+  background-color: #fff0f5;
+  border-left: 5px solid #b48e92;
   padding: 1.2rem 1.5rem;
   margin: 1.5rem 0 3rem 0;
   font-size: 1.1rem;
@@ -441,7 +427,7 @@ footer {
 
 .video-container {
   width: 250px;
-  height: 444px; /* Aspect ratio 9:16 típico reels */
+  height: 444px;
   overflow: hidden;
   border-radius: 12px;
   box-shadow: 0 5px 15px rgba(180, 142, 146, 0.3);
@@ -491,15 +477,16 @@ footer {
 }
 
 .review-section h2 {
-  color: #b48e92;
   font-family: 'Dancing Script', cursive;
-  font-size: 2rem;
+  font-size: 1.6rem;
   margin-bottom: 1rem;
+  color: #b48e92;
   text-align: center;
 }
 
 .review-section blockquote {
   font-style: italic;
+  font-size: 0.9rem;
   color: #6d4c41;
   background: #ffffff;
   border-left: 5px solid #d29ea4;
@@ -507,5 +494,33 @@ footer {
   padding: 1rem 1.2rem;
   border-radius: 10px;
   line-height: 1.6;
+}
+.cursiva-elegante {
+  font-family: 'Marck Script', cursive;
+  font-size: 1.2rem;
+  color: #a47179;
+}
+.intro, .intro-blog, blockquote {
+  font-family: 'Marck Script', cursive;
+  font-style: normal;
+  font-size: 1.2rem;
+  color: #6d4c41;
+}
+
+.main-title {
+  font-size: 1.8rem;
+  text-align: center;
+  color: #b48e92;
+  font-family: 'Dancing Script', cursive;
+  font-style: normal;
+  margin-bottom: 1rem;
+}
+
+.titulo-cafe {
+  font-size: 1.6rem;
+  font-family: 'Dancing Script', cursive;
+  color: #b48e92;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
