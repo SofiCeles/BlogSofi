@@ -525,4 +525,25 @@ footer {
   text-align: center;
   margin-bottom: 1rem;
 }
+.btn-linkedin {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #d29ea4;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  z-index: 999;
+}
+
+.btn-linkedin:hover {
+  background-color: #c28791;
+  transform: scale(1.05);
+}
 
